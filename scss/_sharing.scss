@@ -1,0 +1,44 @@
+.likely-custom {
+    display: inline-block;
+    font-size: $fs-body;
+    color: $text-secondary;
+    .likely__button {
+        padding-left: $fs-body;
+    }
+    div {
+        padding: 1rem $fs-body;
+        position: relative;
+        cursor: pointer;
+        margin: 0 2px 0;
+        border: 1px solid $text-secondary;
+        border-radius: 2px;
+        transition: $transition;
+        &:hover {
+            color: white;
+            background-color: $primary;
+            border: 1px solid transparent;
+            svg {
+                path {
+                    fill: white;
+                }
+            }
+        }
+    }
+    .likely__counter {
+        display: none;
+    }
+    svg {
+        width: $fs-body;
+        height: auto;
+        position: absolute;
+        top: 12px;
+        left: 9px;
+        transition: $transition;
+        path {
+            fill: $text-secondary;
+        }
+    }
+    * {
+        display: inline-block;
+    }
+}

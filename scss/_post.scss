@@ -1,0 +1,27 @@
+.content-post {
+    font-family: 'Merriweather', serif;
+    & header {
+        margin: 4.8rem auto 2.4rem;
+    }
+    & .meta {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-transform: uppercase;
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: bold;
+        & .category {
+            color: $primary;
+        }
+    }
+    & p {
+        line-height: 1.6;
+        margin-bottom: 3rem;
+    }
+    & footer {
+        margin-top: 4.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}

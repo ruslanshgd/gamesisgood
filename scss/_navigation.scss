@@ -1,4 +1,10 @@
 .main-navigation {
+    &-wrapper {
+        display: block;
+        padding-bottom: $fs-body;
+        padding-top: $fs-body;
+        border-bottom: 1px solid $border;
+    }
     display: flex;
     justify-content: space-between;
     list-style: none;

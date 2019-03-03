@@ -1,12 +1,42 @@
-{% include /header-home.html %}
+{% include /header-post.html %} 
 {% include /header.html %}
 
 <section class="content-post">
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
-                {{content}}
+                <article class="row">
+                    <header class="col-xs-12">
+                        <h1 class="extra-large-title ">{{ page.title }}</h1>
+                        <div class="meta">
+                            <span class="category">
+                                {{ page.catname }}
+                            </span>
+                            <span class="date">
+                                {{ page.date | date_to_long_string }}
+                            </span>
+                        </div>
+                        <img src="{{ page.image }}" alt="{{ page.description }}">
+                    </header>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-8">
+                            {{content}}
+                        </div>
+                    </div>
+                    <footer>
+                        <div class="share-links">
+                            <div class="likely likely-custom" data-url="{{ site.url }}{{ page.url }}" data-media="{{ site.url }}/{{ page.image }}" data-title="{{ page.title }}">
+                                <div class="vkontakte" title="Поделиться Вконтакте">Вконтакте</div>
+                                <div class="facebook" title="Поделиться в Facebook">Facebook</div>
+                                <div class="twitter" title="Поделиться в Twitter">Твитнуть</div>
+                            </div>
+                        </div>
+                    </footer>
+                </article>
+                {% include /disqus.html %}
             </div>
         </div>
     </div>
 </section>
+
+{% include /footer.html %}
