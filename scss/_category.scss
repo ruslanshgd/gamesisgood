@@ -3,6 +3,14 @@
     align-items: center;
     justify-content: space-between;
     margin: 1.5rem 0;
+    h2 {
+        a {
+            text-decoration: none;
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
     &-list {
         list-style: none;
         margin: 0;
