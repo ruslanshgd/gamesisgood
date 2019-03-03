@@ -1,0 +1,20 @@
+<section class="platform">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="category">
+                    <h2 class="large-title"><a href="content/pc">Companies</a></h2>
+                    <ul class="category-list">
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Люди</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            {% for post in site.categories.companies limit: 0 offset: 0 %}
+            {% include /home-companies-news-item.html %}
+            {% endfor %}
+        </div>
+    </div>
+</section>

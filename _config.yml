@@ -1,10 +1,10 @@
-title: Games — is good — Game news
+title: Games — is good | Game news
 name: gamesisgood.com
 email: ruslanshgd@gmail.com
 description: "Game news"
 
 themecolor: "#0B0C0C"
-imghome: img/gamesisgood.png
+imghome: img/gamesisgood.jpg
 baseurl: "/"
 url: "https://gamesisgood.com/"
 markdown: kramdown
@@ -14,7 +14,7 @@ category_dir: content
 pagination:
   enable: true
   per_page: 9
-  title: ":title - Page :num"
+  title: ":title - Страница :num"
   limit: 0
   sort_field: "date"
   sort_reverse: true

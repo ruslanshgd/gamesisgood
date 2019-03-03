@@ -28,3 +28,10 @@ a {
 .content {
     flex: 1 0 auto;
 }
+
+.platform {
+    margin-top: 9.6rem;
+    @media screen and (max-width: 600px) {
+        margin-top: 0;
+    }
+}
