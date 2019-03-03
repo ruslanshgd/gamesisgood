@@ -1,7 +1,7 @@
 _site
 .sass-cache
 .jekyll-metadata
-_post
+_posts
 content
 dev-images
 node_modules

@@ -13,9 +13,9 @@
             </div>
         </div>
         <div class="row">
-{% for post in site.categories.ps4 limit: 0 offset: 0 %}
-{% include /home-ps4-news-item.html %}
-{% endfor %}
+            {% for post in site.categories.ps4 %}
+            {% include /home-ps4-news-item.html %}
+            {% endfor %}
         </div>
     </div>
 </section>

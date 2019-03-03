@@ -12,7 +12,7 @@
             </div>
         </div>
         <div class="row">
-            {% for post in site.categories.companies limit: 0 offset: 0 %}
+            {% for post in site.categories.companies %}
             {% include /home-companies-news-item.html %}
             {% endfor %}
         </div>
