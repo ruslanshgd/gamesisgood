@@ -5,9 +5,17 @@
     padding-top: 5.6rem;
     padding-bottom: 9.6rem;
     margin-top: 9.6rem;
-}
-
-.logo-90deg {
-    font-weight: 400;
-    transform: rotate(-90deg);
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        a {
+            color: $text-secondary;
+            text-decoration: none;
+            transition: $transition;
+            &:hover {
+                color: white;
+            }
+        }
+    }
 }

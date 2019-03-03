@@ -2,6 +2,7 @@
     display: inline-block;
     font-size: $fs-body;
     color: $text-secondary;
+    font-family: 'Fira Sans', sans-serif;
     .likely__button {
         padding-left: $fs-body;
     }
@@ -31,7 +32,7 @@
         width: $fs-body;
         height: auto;
         position: absolute;
-        top: 12px;
+        top: 11px;
         left: 9px;
         transition: $transition;
         path {
