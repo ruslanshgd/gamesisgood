@@ -1,0 +1,30 @@
+html,
+body {
+    height: 100%;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    color: $text-main;
+    font-family: 'Inter UI', sans-serif;
+    font-size: $fs-body;
+    line-height: $lh-body;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+}
+
+a {
+    color: inherit;
+    &:hover {
+        transition: $transition;
+    }
+}
+
+.content {
+    flex: 1 0 auto;
+}

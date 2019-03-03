@@ -1,0 +1,45 @@
+.large-title {
+    font-size: 3.4rem;
+    line-height: 4.1rem;
+    font-weight: bold;
+}
+
+.title-1 {
+    font-size: 2.8rem;
+    line-height: 3.4rem;
+    font-weight: bold;
+    @media screen and (max-width: 600px) {
+        font-size: $fs-body;
+        line-height: $lh-body;
+    }
+}
+
+.title-2 {
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+    font-weight: bold;
+    @media screen and (max-width: 600px) {
+        font-size: $fs-body;
+        line-height: $lh-body;
+    }
+}
+
+.callout {
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    @media screen and (max-width: 600px) {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+    }
+}
+
+.subhead {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    @media screen and (max-width: 600px) {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+    }
+}

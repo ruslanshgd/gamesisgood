@@ -1,0 +1,19 @@
+.header {
+    margin-bottom: 9.6rem;
+    @media screen and (max-width: 600px) {
+        margin-bottom: 0;
+    }
+    & h1 {
+        font-size: 6rem;
+        line-height: 7rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        & span {
+            color: $text-secondary;
+        }
+        @media screen and (max-width: 600px) {
+            font-size: 2.8rem;
+            line-height: 3.4rem;
+        }
+    }
+}

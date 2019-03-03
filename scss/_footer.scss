@@ -1,0 +1,12 @@
+.footer {
+    flex-shrink: 0;
+    color: white;
+    background-color: $text-main;
+    padding-top: 5.6rem;
+    padding-bottom: 5.6rem;
+}
+
+.logo-90deg {
+    font-weight: 400;
+    transform: rotate(-90deg);
+}
