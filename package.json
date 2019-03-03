@@ -1,0 +1,31 @@
+{
+    "name": "jekyll-static-site-starter",
+    "version": "1.0.0",
+    "description": "starter template for static sites on jekyll",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "jekyll",
+        "template",
+        "static",
+        "site",
+        "gulp",
+        "sass"
+    ],
+    "author": "Ruslan Sharipov",
+    "license": "ISC",
+    "devDependencies": {
+        "browser-sync": "^2.26.3",
+        "gulp": "3.9.1",
+        "gulp-autoprefixer": "^6.0.0",
+        "gulp-clean-css": "^4.0.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-notify": "^3.2.0",
+        "gulp-rename": "^1.4.0",
+        "gulp-sass": "^4.0.2",
+        "gulp-uglify": "^3.0.2",
+        "gulp-util": "^3.0.8"
+    }
+}

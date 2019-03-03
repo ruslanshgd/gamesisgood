@@ -1,0 +1,7 @@
+_site
+.sass-cache
+.jekyll-metadata
+_post
+content
+dev-images
+node_modules

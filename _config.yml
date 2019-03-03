@@ -1,0 +1,43 @@
+title: Games — is good — Game news
+name: gamesisgood.com
+email: ruslanshgd@gmail.com
+description: "Game news"
+
+themecolor: "#0B0C0C"
+imghome: img/gamesisgood.png
+baseurl: "/"
+url: "https://gamesisgood.com/"
+markdown: kramdown
+
+plugins: [jekyll-paginate-v2]
+category_dir: content
+pagination:
+  enable: true
+  per_page: 9
+  title: ":title - Page :num"
+  limit: 0
+  sort_field: "date"
+  sort_reverse: true
+  trail:
+    before: 2
+    after: 2
+
+exclude:
+  [
+    "node_modules",
+    "gulpfile.js",
+    "package.json",
+    "package.lock.json",
+    "js/index.js",
+    "npm-debug.log",
+    "scss/main.scss",
+    "**/Thumbs.db",
+    "libs",
+    "scss",
+    "**/*.DS_Store",
+  ]
+
+socials: <li><a href="https://twitter.com/Ruslan_SH1">Twitter</a></li>
+  <li><a href="http://t.me/rsgdru">Telegram</a></li>
+
+copyright: © Copyright 2019-2020 by Ruslan Sharipov.

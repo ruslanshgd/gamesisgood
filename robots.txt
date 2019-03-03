@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /index.html
+Host: gamesisgood.com
+Sitemap: https://gamesisgood.com/sitemap.xml
