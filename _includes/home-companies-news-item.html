@@ -1,18 +1,34 @@
 <div class="col-xs-12">
     <article class="news">
+
+        <img src="{{ post.thumb }}" class="news-image" />
+
         <div class="news-wrapper">
-            <a href="{{ post.url }}" class="news-link">
-                <img src="{{ post.thumb }}" class="news-image" />
-                <div class="news-content">
-                    <div class="news-info callout"><span class="news-category">{{ post.catname }}</span>
-                        <date>September 28, 2019</date>
-                    </div>
-                    <h3 class="title-1">{{ post.title }}</h3>
-                    <div class="news-info subhead"><span>999 comments</span>
-                        <div class="sharing">Share</div>
+            <div class="news-info callout">
+                <span class="news-category">
+                    {{ post.catname }}
+                </span>
+                <span>
+                    {{ post.date | date_to_long_string }}
+                </span>
+            </div>
+
+
+            <h3 class="title-1"> <a href="{{ post.url }}" class="news-link">{{ post.title }} </a></h3>
+
+
+            <div class="news-info subhead">
+                <div>
+                    <a href="{{ post.url }}#disqus_thread" class="news-comments"></a>
+                </div>
+                <div class="share-links">
+                    <div class="likely likely-custom" data-url="{{ site.url }}{{ post.url }}" data-media="{{ site.url }}/{{ post.image }}" data-title="{{ post.title }}">
+                        <div class="vkontakte" title="Поделиться Вконтакте">Вконтакте</div>
+                        <div class="facebook" title="Поделиться в Facebook">Facebook</div>
+                        <div class="twitter" title="Поделиться в Twitter">Твитнуть</div>
                     </div>
                 </div>
-            </a>
+            </div>
         </div>
     </article>
 </div>

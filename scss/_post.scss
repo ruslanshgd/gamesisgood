@@ -1,5 +1,13 @@
 .content-post {
     font-family: 'Merriweather', serif;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Fira Sans", sans-serif;
+    }
     & header {
         margin: 4.8rem auto 2.4rem;
     }
