@@ -20,10 +20,11 @@ body {
 }
 
 a {
-    color: inherit;
+    color: $primary;
     cursor: pointer;
     &:hover {
         transition: $transition;
+        color: darken($color: $primary, $amount: 20);
     }
 }
 
