@@ -1,0 +1,14 @@
+.button {
+    display: block;
+    padding: 2rem;
+    text-decoration: none;
+    border: 1px solid $border;
+    border-radius: 2px;
+    transition: $transition;
+    &:hover {
+        color: white;
+        background-color: $text-main;
+        transform: translateY(-.8rem);
+        box-shadow: 0 3rem 4rem -2rem rgba($color: #000000, $alpha: 0.4);
+    }
+}
