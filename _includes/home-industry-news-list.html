@@ -3,18 +3,22 @@
         <div class="row">
             <div class="col-xs-12">
                 <div class="category">
-                    <h2 class="large-title"><a href="content/pc">Индустрия</a></h2>
-                    <ul class="category-list">
+                    <h2 class="large-title"><a href="content/pc" class="news-link">Индустрия</a></h2>
+                    <!-- <ul class="category-list">
                         <li><a href="#">Новости</a></li>
                         <li><a href="#">Люди</a></li>
-                    </ul>
+                    </ul> -->
                 </div>
             </div>
         </div>
         <div class="row">
-            {% for post in site.categories.industry %}
-            {% include /home-industry-news-item.html %}
-            {% endfor %}
+{% if site.categories.industry == null %}
+{% include /no-news.html %}
+{% else %}
+{% for post in site.categories.industry %}
+{% include /home-industry-news-item.html %}
+{% endfor %}
+{% endif %}
         </div>
     </div>
 </section>

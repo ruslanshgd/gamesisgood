@@ -3,19 +3,24 @@
         <div class="row">
             <div class="col-xs-12">
                 <div class="category">
-                    <h2 class="large-title"><a href="content/ps4">PS4</a></h2>
+                    <h2 class="large-title"><a href="content/ps4" class="news-link">PS4</a></h2>
+                    {%- comment -%}
                     <ul class="category-list">
                         <li><a href="#">Новости</a></li>
                         <li><a href="#">Релизы</a></li>
                         <li><a href="#">Обзоры</a></li>
-                    </ul>
+                    </ul> {%- endcomment -%}
                 </div>
             </div>
         </div>
         <div class="row">
-            {% for post in site.categories.ps4 %}
-            {% include /home-ps4-news-item.html %}
-            {% endfor %}
+{% if site.categories.ps4 == null %}
+{% include /no-news.html %}
+{% else %}
+{% for post in site.categories.ps4 %} 
+{% include /home-ps4-news-item.html %} 
+{% endfor %}
+{% endif %}
         </div>
     </div>
 </section>

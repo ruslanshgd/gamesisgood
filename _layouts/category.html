@@ -11,13 +11,13 @@
     </div>
 
     <div class="row">
-        {% if paginator.posts == null %} 
-            {% include /no-content.html %} 
-        {% else %} 
-        {% for post in paginator.posts %} 
-            {% include /home-pc-news-item.html %} 
-        {% endfor %} 
-        {% endif %}
+{% if paginator.posts == null %} 
+{% include /no-content.html %} 
+{% else %} 
+{% for post in paginator.posts %} 
+{% include /home-pc-news-item.html %} 
+{% endfor %} 
+{% endif %}
     </div>
 
     <div class="row center-xs">

@@ -4,6 +4,7 @@
     text-decoration: none;
     border: 1px solid $border;
     border-radius: 2px;
+    color: $text-secondary;
     transition: $transition;
     &:hover {
         color: white;

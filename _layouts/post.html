@@ -1,4 +1,5 @@
-{% include /header-post.html %} {% include /header.html %}
+{% include /header-post.html %} 
+{% include /header.html %}
 
 <section class="content-post">
     <div class="container">
@@ -11,7 +12,7 @@
                             <span class="category">
                                 {{ page.catname }}
                             </span>
-                            <span>
+                            <span class="date">
                                 {{ page.date | date: '%d' }}.{{ page.date | date: '%m' }}.{{ page.date | date: '%Y' }}
                             </span>
                         </div>
