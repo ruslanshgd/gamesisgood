@@ -1,6 +1,7 @@
 _site
 .sass-cache
 .jekyll-metadata
+.htaccess
 _posts
 content
 dev-images

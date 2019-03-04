@@ -12,7 +12,7 @@
                                 {{ page.catname }}
                             </span>
                             <span>
-                                {{ page.date | date_to_long_string }}
+                                {{ page.date | date: '%d' }}.{{ page.date | date: '%m' }}.{{ page.date | date: '%Y' }}
                             </span>
                         </div>
                         <img src="{{ page.image }}" alt="{{ page.description }}">
