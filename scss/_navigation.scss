@@ -5,13 +5,20 @@
         padding-top: $fs-body;
         border-bottom: 1px solid $border;
     }
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-transform: uppercase;
-    & a {
+    & ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-transform: uppercase;
+    }
+    & li.active {
+        a {
+            color: $primary;
+        }
+    }
+    & li a {
         text-decoration: none;
         color: $text-secondary;
         &:active,

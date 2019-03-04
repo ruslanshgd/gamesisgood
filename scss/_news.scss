@@ -7,7 +7,6 @@
     opacity: 1;
     transition: $transition;
     text-decoration: none;
-    cursor: pointer;
     color: inherit;
     &:hover {
         box-shadow: 0 1.2rem 4rem -2rem rgba($color: #000000, $alpha: 0.2);
@@ -17,6 +16,9 @@
         height: auto;
         margin: 0 4.8rem 0 0;
         overflow: hidden;
+        flex-shrink: 0;
+        flex-grow: 0;
+        line-height: 0;
         border-radius: 2px;
         @media screen and (max-width: 600px) {
             width: 12rem;

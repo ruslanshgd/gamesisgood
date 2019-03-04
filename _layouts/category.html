@@ -1,3 +1,25 @@
-{% include /header-home.html %}
+{% include /header-category.html %}
 {% include /header.html %}
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-xs-12 center-xs">
+            <h1 class="large-title">{{page.title}}</h1>
+            <p>{{page.description}}</p>
+        </div>
+    </div>
+
+    <div class="row">
+        {% if paginator.posts == null %} 
+        {% include /no-content.html %} 
+        {% else %} 
+        {% for post in paginator.posts %} 
+        {% include /home-pc-news-item.html %} 
+        {% endfor %} 
+        {% endif %}
+    </div>
+
+</div>
+
 {% include /footer.html %}

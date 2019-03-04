@@ -9,12 +9,12 @@
                     {{ post.catname }}
                 </span>
                 <span>
-                    {{ post.date | date_to_long_string }}
+                    {{ post.date | date: '%d' }}.{{ post.date | date: '%m' }}.{{ post.date | date: '%Y' }}
                 </span>
             </div>
 
 
-            <h3 class="title-1"> <a href="{{ post.url }}" class="news-link">{{ post.title }} </a></h3>
+            <h3 class="title-1"><a href="{{ post.url }}" class="news-link">{{ post.title }}</a></h3>
 
 
             <div class="news-info subhead">

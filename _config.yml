@@ -12,7 +12,7 @@ markdown: kramdown
 plugins: [jekyll-paginate-v2]
 category_dir: content
 pagination:
-  enable: true
+  enabled: true
   per_page: 9
   title: ":title - Страница :num"
   limit: 0
